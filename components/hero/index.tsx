@@ -10,13 +10,16 @@ const Hero = () => {
       <div className="absolute left-0 right-0 md:top-[200px] bottom-0 w-full bg-[url('/Gradient.svg')]" />
       <div className=" pt-[132px] px-[18px] pb-[45px] md:pt-[260px] md:px-[242px] md:pb-[109px] w-full text-center items-center flex flex-col gap-[45px] md:gap-[72px]">
         <div className="flex flex-col gap-5 md:gap-[28px] text-center items-center">
-          <Image
+          {/* <Image
             src="/hero-image.svg"
             alt="hero-image"
             width={1028}
             height={166}
             className="hidden md:flex"
-          />
+          /> */}
+          <span className="bg-gradient-to-b px-4 from-white to-gray-500 bg-clip-text text-transparent hidden md:flex  text-[32px] font-[600] md:text-[66px] text-[#ECECEE] md:font-[600] w-full text-center leading-normal">
+            Mobile Testing should not be slow and tangled
+          </span>
           <div>
             <span className="bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent  text-[32px] font-[600] md:text-[24px] text-[#ECECEE] md:font-[600] w-full text-center leading-normal md:hidden">
               Mobile Testing
