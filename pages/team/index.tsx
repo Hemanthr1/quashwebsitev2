@@ -50,9 +50,9 @@ const mediaTeam = [
 
 const TeamPage = () => {
   return (
-    <>
+    <div>
       <div className="relative h-full mt-[132px] md:mt-[242px] md:px-[170px] px-[18px] flex flex-col justify-center items-center text-white gap-[96px] md:gap-[176px] pb-[61px] md:pb-[115px]">
-        <div className="absolute inset-0  bg-[url('/Gradient.svg')] h-[1154px] w-full" />
+        <div className="absolute inset-0  bg-[url('/Gradient.svg')] md:h-[1154px] md:w-full md:flex hidden" />
         <div className="flex flex-col gap-4 md:gap-7 text-center  md:px-[70px]">
           <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600]">
             OUR MISSION
@@ -76,21 +76,20 @@ const TeamPage = () => {
             tasks while keeping the quality at our top priority.
           </span>
         </div>
-        <div className="flex flex-col text-start gap-6 w-full items-start">
-          <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600]">
+        <div className="flex flex-col text-start gap-6 w-full ">
+          <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600] md:text-center w-full">
             FOUNDERS
           </span>
-          <div className="grid grid-cols-3 gap-[22px] md:gap-8 justify-start ">
+          <div className="grid grid-cols-3 gap-[22px]  md:gap-8 justify-between w-full ">
             {mediaFounders.map((media, index) => (
               <div className="flex flex-col gap-3 md:gap-6 items-start justify-start md:items-center text-start md:text-center">
-                {/* <Image
-                src={media.img}
-                alt={media.label}
-                width={88}
-                height={98}
-                className="flex md:hidden rounded-[4px]"
-              /> */}
-                <div className="h-[98] w-[88] bg-[url('/Gradient.svg')]"></div>
+                <Image
+                  src={media.img}
+                  alt={media.label}
+                  width={88}
+                  height={98}
+                  className="flex md:hidden rounded-[4px]"
+                />
                 <div className="h-[272px] w-[272px] overflow-hidden rounded-[4px] md:flex hidden">
                   <Image
                     src={media.img}
@@ -109,10 +108,10 @@ const TeamPage = () => {
           </div>
         </div>
         <div className="flex flex-col text-start gap-6 w-full">
-          <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600]">
+          <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600] w-full md:text-center">
             TEAM
           </span>
-          <div className="grid grid-cols-3 lg:grid-cols-4 gap-[22px] md:gap-8 justify-start ">
+          <div className="grid grid-cols-3 gap-[22px] md:gap-8 justify-between ">
             {mediaTeam.map((media, index) => (
               <div className="flex flex-col gap-3 md:gap-6 items-start justify-start md:items-center text-start md:text-center">
                 <Image
@@ -142,7 +141,7 @@ const TeamPage = () => {
       </div>
 
       <Journey />
-    </>
+    </div>
   );
 };
 

@@ -10,9 +10,11 @@ const Journey = () => {
       <span className="text-[24px] md:text-[48px] text-[#ECECEE] font-[600] mb-10">
         Want to be a part of this Journey?
       </span>
-      <span className="text-[14px] md:text-[24px] text-[#ECECEE] font-[300] md:font-[400]">
+      <span className="text-[14px] md:text-[24px] text-[#ECECEE] font-[300] md:font-[400] z-20">
         Write to us at{" "}
-        <a href="mailto:hello@quashbugs.com">hello@quashbugs.com</a>
+        <a href="mailto:hello@quashbugs.com" className="z-20">
+          hello@quashbugs.com
+        </a>
       </span>
     </div>
   );
