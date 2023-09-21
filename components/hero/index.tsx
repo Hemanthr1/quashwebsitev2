@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import { useRouter } from "next/router";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <div className="relative flex flex-col md:gap-5 items-center">
       <div className="absolute left-0 right-0 md:top-[200px] bottom-0 w-full bg-[url('/Gradient.svg')]" />
@@ -30,8 +32,11 @@ const Hero = () => {
           </span>
         </div>
         <Button
-          className="text-[#000000] text-[16px] md:text-[24px] font-[600] bg-[#FFFFFF] px-4 py-3 md:py-[14px] rounded-[100px] h-[58px] flex z-10 leading-5 md:leading-normal"
+          className="text-[#000000] text-[16px] md:text-[24px] font-[600] bg-[#FFFFFF] px-4 py-3 md:py-[14px] rounded-[100px] h-[58px] flex z-10 leading-5 md:leading-normal hover:bg-[#FFFFFFCC]"
           variant="outline"
+          onClick={() => {
+            router.push("https://optimus.quashbugs.com/signup");
+          }}
         >
           Get Started for Free
         </Button>

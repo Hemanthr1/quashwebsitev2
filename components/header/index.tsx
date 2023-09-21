@@ -85,7 +85,7 @@ const Header = () => {
 
       <div className="flex gap-3 md:gap-6 items-center text-center">
         <span
-          className="text-[12px] md:text-[16px] text-[#FFFFFF] font-[600] leading-[15px] md:leading-5 hover:cursor-pointer"
+          className="text-[12px] md:text-[16px] text-[#FFFFFF] font-[600] leading-[15px] md:leading-5 hover:cursor-pointer hover:text-[#FFFFFFCC]"
           onClick={() => {
             router.push("https://optimus.quashbugs.com");
           }}
@@ -93,7 +93,7 @@ const Header = () => {
           Sign in
         </span>
         <Button
-          className="text-[#000000] text-[12px] font-[600] leading-[15px] bg-[#FFFFFF] px-2 py-[6px] rounded-[100px] h-[28px] md:hidden"
+          className="text-[#000000] text-[12px] font-[600] leading-[15px] bg-[#FFFFFF] px-2 py-[6px] rounded-[100px] h-[28px] md:hidden hover:bg-[#FFFFFFCC]"
           variant="outline"
           onClick={() => {
             router.push("https://optimus.quashbugs.com/signup");
@@ -102,7 +102,7 @@ const Header = () => {
           Get Started
         </Button>
         <Button
-          className="text-[#000000] text-[16px] font-[600] leading-[20px] bg-[#FFFFFF] hidden px-4 py-[14px] rounded-[100px] h-[48px] md:flex"
+          className="text-[#000000] text-[16px] font-[600] leading-[20px] bg-[#FFFFFF] hidden px-4 py-[14px] rounded-[100px] h-[48px] md:flex hover:bg-[#FFFFFFCC]"
           variant="outline"
           onClick={() => {
             router.push("https://optimus.quashbugs.com/signup");
@@ -141,7 +141,7 @@ const Header = () => {
                   key={index}
                 >
                   <span
-                    className="text-[12px] text-white font-[500] leading-5 hover:cursor-pointer"
+                    className="text-[12px] text-white font-[500] leading-5 hover:cursor-pointer hover:text-[#FFFFFFCC]"
                     onClick={() => {
                       router.push(nav.path);
                     }}
@@ -152,7 +152,7 @@ const Header = () => {
               ))}
               <div className="flex justify-between items-center p-2">
                 <Button
-                  className="text-[#000000] text-[12px] font-[600] leading-[15px] bg-[#FFFFFF] px-2 py-[6px] rounded-[100px] h-[28px] md:hidden"
+                  className="text-[#000000] text-[12px] font-[600] leading-[15px] bg-[#FFFFFF] px-2 py-[6px] rounded-[100px] h-[28px] md:hidden hover:bg-[#FFFFFFCC]"
                   variant="outline"
                   onClick={() => {
                     router.push("https://optimus.quashbugs.com/signup");
