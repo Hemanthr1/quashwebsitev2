@@ -21,11 +21,11 @@ const mobileNav = [
     path: "/",
     value: "home",
   },
-  {
-    label: "UpComing",
-    path: "",
-    value: "upcoming",
-  },
+  // {
+  //   label: "UpComing",
+  //   path: "",
+  //   value: "upcoming",
+  // },
   {
     label: "Team",
     path: "/team",
@@ -52,6 +52,9 @@ const Header = () => {
         height={16}
         priority
         className="flex md:hidden"
+        onClick={() => {
+          router.push("/");
+        }}
       />
       <div className="flex gap-6 items-center">
         <Image
@@ -61,6 +64,9 @@ const Header = () => {
           height={30}
           priority
           className="hidden md:flex"
+          onClick={() => {
+            router.push("/");
+          }}
         />
         <div className="hidden md:flex gap-6 items-center">
           {mobileNav.map((nav, index) => (
