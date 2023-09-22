@@ -11,7 +11,7 @@ const footerNav = [
   },
   {
     label: "Privacy Policy",
-    route: "",
+    route: "/privacy",
   },
   {
     label: "Support",
@@ -22,7 +22,7 @@ const footerNav = [
 const footerCareer = [
   {
     label: "Careers",
-    route: "",
+    route: "/team",
   },
   {
     label: "Contact Sales",
