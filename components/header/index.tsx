@@ -144,6 +144,7 @@ const Header = () => {
                     className="text-[12px] text-white font-[500] leading-5 hover:cursor-pointer hover:text-[#FFFFFFCC]"
                     onClick={() => {
                       router.push(nav.path);
+                      setOpen(false);
                     }}
                   >
                     {nav.label}
