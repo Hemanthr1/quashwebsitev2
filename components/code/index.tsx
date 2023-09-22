@@ -148,7 +148,7 @@ const CodeSection = () => {
       >
         <span>Learn more</span>
         <ArrowRight
-          className="h-4 w-4 pt-1 md:pt-2 md:h-8 md:w-8"
+          className="h-6 w-6 pt-1 md:pt-2 md:h-8 md:w-8"
           color="#ffffff"
         />
       </a>
