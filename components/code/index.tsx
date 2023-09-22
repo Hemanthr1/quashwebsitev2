@@ -50,7 +50,7 @@ const CodeSection = () => {
                 }   border-[rgba(255, 255, 255, 0.06)] mb-[-0.2px]`}
               >
                 {item.label}
-                {/* {index > 0 && "(Coming Soon)"} */}
+                {index > 0 && "(Coming Soon)"}
               </span>
             ))}
 

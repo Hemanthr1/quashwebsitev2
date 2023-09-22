@@ -1,4 +1,4 @@
-import { MapPin, PaperPlaneTilt } from "@/lib/icons";
+import { MapPin, PaperPlaneTilt, X } from "@/lib/icons";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import {
@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useState } from "react";
 import { DemoRequestForm } from "@/components/contact-form";
+import { Toaster } from "../ui/toaster";
 
 const footerNav = [
   {
@@ -22,10 +23,10 @@ const footerNav = [
     label: "Privacy Policy",
     route: "/privacy",
   },
-  {
-    label: "Support",
-    route: "",
-  },
+  // {
+  //   label: "Support",
+  //   route: "",
+  // },
 ];
 
 const footerCareer = [
@@ -104,6 +105,14 @@ const Footer = () => {
               {nav.label}
             </a>
           ))}
+          <span
+            onClick={() => {
+              setFormOpen(true);
+            }}
+            className="hover:cursor-pointer"
+          >
+            Support
+          </span>
         </div>
         <div className="flex flex-col gap-6 md:gap-8 justify-center md:justify-start items-start text-center">
           {/* {footerCareer.map((nav, index) => ( */}
@@ -161,7 +170,7 @@ const Footer = () => {
       {(formOpen || formSubmitted) && (
         <AlertDialog open={formOpen}>
           <AlertDialogContent
-            className={`border-none w-full ${
+            className={` border-[2px] border-solid border-gray-500 w-full ${
               !formSubmitted ? "demo-container bg-[#E0EED5]" : "submitted"
             }  `}
           >
@@ -169,7 +178,7 @@ const Footer = () => {
               {!formSubmitted && (
                 <AlertDialogTitle className="demo-title flex justify-between">
                   Reach out to us
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="34"
                     height="34"
@@ -184,7 +193,14 @@ const Footer = () => {
                       d="M17 14.9969L24.0125 7.98438L26.0157 9.98754L19.0032 17L26.0157 24.0125L24.0125 26.0157L17 19.0032L9.98754 26.0157L7.98438 24.0125L14.9969 17L7.98438 9.98754L9.98754 7.98438L17 14.9969Z"
                       fill="#0E0E1A"
                     />
-                  </svg>
+                  </svg> */}
+                  <X
+                    size={34}
+                    className="hover:cursor-pointer"
+                    onClick={() => {
+                      setFormOpen(false);
+                    }}
+                  />
                 </AlertDialogTitle>
               )}
               <AlertDialogDescription className="w-full">
@@ -206,8 +222,8 @@ const Footer = () => {
                         />
                       </svg>
                       <div className="flex flex-col text-center gap-3">
-                        <span className="req-submitted">Reach out to us</span>
-                        <span className="req-desc">
+                        {/* <span className="req-submitted">Reach out to us</span> */}
+                        <span className="req-desc text-white">
                           We’ll get back to you shortly
                         </span>
                       </div>

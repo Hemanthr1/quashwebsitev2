@@ -118,7 +118,7 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
                   <Input
                     placeholder="Bruce Wayne"
                     {...field}
-                    className=" demo-input"
+                    className=" demo-input placeholder:text-black/30"
                   />
                 </FormControl>
 
@@ -142,7 +142,7 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
                   <Input
                     placeholder="Quash"
                     {...field}
-                    className=" demo-input"
+                    className=" demo-input placeholder:text-black/30"
                   />
                 </FormControl>
 
@@ -166,7 +166,7 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
                   <Input
                     placeholder="bruce@quash.com"
                     {...field}
-                    className=" demo-input"
+                    className=" demo-input placeholder:text-black/30"
                   />
                 </FormControl>
                 <FormMessage />
@@ -189,7 +189,7 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
                   <Input
                     placeholder="1234567890"
                     {...field}
-                    className=" demo-input"
+                    className=" demo-input placeholder:text-black/30"
                   />
                 </FormControl>
                 <FormMessage />
@@ -200,12 +200,12 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
 
         <Button
           type="submit"
-          disabled={isEmpty}
+          // disabled={isEmpty}
           onClick={() => {
             // setFormOpen(false);
           }}
-          className={`demo-submit ${
-            !isEmpty ? "bg-[#418A30] hover:bg-[#418A30]" : "bg-[#bdddab]"
+          className={`demo-submit hover:bg-gray-100 ${
+            !isEmpty ? "bg-white " : "bg-white cursor-not-allowed"
           } `}
         >
           {showLoader && <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />}

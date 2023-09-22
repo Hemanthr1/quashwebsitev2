@@ -21,11 +21,11 @@ const mobileNav = [
     path: "/",
     value: "home",
   },
-  {
-    label: "UpComing",
-    path: "",
-    value: "upcoming",
-  },
+  // {
+  //   label: "UpComing",
+  //   path: "",
+  //   value: "upcoming",
+  // },
   {
     label: "Team",
     path: "/team",

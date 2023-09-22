@@ -216,12 +216,15 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 6.62%, #61BEB9 52.55%, rg
     gap: 8px;
     flex-shrink: 0;
     border-radius: 20px !important;
-    background: #bdddab;
+    border-style: solid;
+    background: black;
+    border-width: 2px;
+    border-color: rgb(107 114 128 / var(--tw-border-opacity));
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
   }
   
   .demo-title {
-    color: black;
+    color: white;
     font-family: var(--roboto);
     font-size: 24px;
     font-style: normal;
@@ -280,7 +283,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 6.62%, #61BEB9 52.55%, rg
     gap: 24px;
     flex-shrink: 0;
     border-radius: 16px !important;
-  background: #193613;
+  background: BLACK;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
   }
 
