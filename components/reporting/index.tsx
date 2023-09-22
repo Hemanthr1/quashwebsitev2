@@ -3,7 +3,23 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const reportingMedia = ["/shake.svg", "/logs.svg", "/notes.svg"];
+const reportingMedia = [
+  {
+    img: "/shake.svg",
+    title: "Shake & Report bugs directly from your device",
+    desc: "Quash SDK gets integrated with your build app to enable on-the-go reporting",
+  },
+  {
+    img: "/logs.svg",
+    title: "Get Auto-captured logs & session recordings",
+    desc: "Eliminate the process of recording and adding attachments manually in a ticket",
+  },
+  {
+    img: "/notes.svg",
+    title: "Attach voice notes and comments",
+    desc: "Provide extensive details about the issue by simply recording your voice",
+  },
+];
 
 const Reporting = () => {
   return (
@@ -30,14 +46,25 @@ const Reporting = () => {
       </span>
       <div className="hidden justify-center items-center gap-10 px-[116px]   md:flex">
         {reportingMedia.map((media, index) => (
-          <Image
-            key={index}
-            src={media}
-            alt={media}
-            width={400}
-            height={554}
-            className=""
-          />
+          <div className="card flex flex-col items-center justify-between md:gap-[70px] md:px-[17px] md:pt-[38px] bg-[rgba(217, 217, 217, 0.06)]  md:w-[400px]">
+            <div className="md:w-[336px] md:px-4 text-start flex flex-col gap-4">
+              <span className="md:text-[24px] md:text-[#ECECEE] md:font-[600]">
+                {media.title}
+              </span>
+              <span className="md:text-[16px] md:text-[#878787] md:font-[400]">
+                {media.desc}
+              </span>
+            </div>
+            <Image
+              key={index}
+              src={media.img}
+              alt={media.img}
+              width={366}
+              height={330}
+              layout="fixed"
+              className=""
+            />
+          </div>
         ))}
       </div>
       <Carousel
@@ -53,8 +80,8 @@ const Reporting = () => {
         {reportingMedia.map((media, index) => (
           <Image
             key={index}
-            src={media}
-            alt={media}
+            src={media.img}
+            alt={media.img}
             width={272}
             height={374}
             className=""
