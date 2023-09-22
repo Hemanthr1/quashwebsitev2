@@ -1,6 +1,8 @@
 import { ArrowRight, ClipboardText } from "@/lib/icons";
-import Image from "next/image";
+import { fira } from "@/pages/_app";
 import React, { useState } from "react";
+
+const codeFira = fira;
 
 const OS = [
   {
@@ -48,14 +50,17 @@ const CodeSection = () => {
                 }   border-[rgba(255, 255, 255, 0.06)] mb-[-0.2px]`}
               >
                 {item.label}
-                {index > 0 && "(Coming Soon)"}
+                {/* {index > 0 && "(Coming Soon)"} */}
               </span>
             ))}
 
             {/* <span className="text-[#ECECEE99]"></span>
             <span className="text-[#ECECEE99]"></span> */}
           </div>
-          <div className="w-full text-[10px] leading-[0.05] md:text-[24px] md:leading-[0.116] overflow-x-scroll md:overflow-auto flex md:item-center gap-[12px] p-4 md:px-8 md:pt-10 md:pb-8">
+          <div
+            style={codeFira.style}
+            className="w-full text-[10px] leading-[0.05] md:text-[24px] md:leading-[0.116] overflow-x-scroll md:overflow-auto flex md:item-center gap-[12px] p-4 md:px-8 md:pt-10 md:pb-8"
+          >
             <div className="numbers md:gap-[3px] text-[10px] leading-[0.05] md:text-[24px] md:leading-[0.129] flex flex-col ">
               <p>1</p>
               <p>2</p>
