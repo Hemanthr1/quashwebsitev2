@@ -4,46 +4,46 @@ import React from "react";
 
 const mediaFounders = [
   {
-    img: "/demo-pic.webp",
+    img: "/ayush.png",
     label: "Ayush",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/hamza.png",
     label: "Hamza",
   },
   {
-    img: "/demo-pic.webp",
-    label: "Hamza",
+    img: "/prakhar.png",
+    label: "Prakhar",
   },
 ];
 
 const mediaTeam = [
   {
-    img: "/demo-pic.webp",
+    img: "/ashutosh.png",
     label: "Ashutosh",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/ira.png",
     label: "Ira",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/hemanth.png",
     label: "Hemanth",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/prem.png",
     label: "Prem",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/kirti.png",
     label: "Kirti",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/yash.png",
     label: "Yash",
   },
   {
-    img: "/demo-pic.webp",
+    img: "/shivam.png",
     label: "Shivam",
   },
 ];
