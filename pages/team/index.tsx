@@ -111,7 +111,7 @@ const TeamPage = () => {
           <span className="text-[12px] md:text-[24px] text-[#ECECEE] font-[600] w-full md:text-center">
             TEAM
           </span>
-          <div className="grid grid-cols-3 gap-[22px] md:gap-8 justify-between ">
+          <div className="grid grid-cols-3 gap-y-6 md:gap-x-8 md:gap-y-12 justify-between ">
             {mediaTeam.map((media, index) => (
               <div className="flex flex-col gap-3 md:gap-6 items-start justify-start md:items-center text-start md:text-center">
                 <Image
