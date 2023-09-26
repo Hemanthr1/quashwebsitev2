@@ -44,7 +44,7 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <div className="header fixed top-0 py-2 px-4 w-full flex justify-between items-center md:px-[120px] md:py-6 z-50">
+    <div className="header fixed top-0 py-[14px] px-4 w-full flex justify-between items-center md:px-[120px] md:py-3 z-50">
       <Image
         src="/logo-mobile.svg"
         alt="Quash Logo"

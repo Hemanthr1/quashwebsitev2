@@ -200,11 +200,11 @@ export function DemoRequestForm({ setFormSubmitted }: any) {
 
         <Button
           type="submit"
-          // disabled={isEmpty}
+          disabled={isEmpty}
           onClick={() => {
             // setFormOpen(false);
           }}
-          className={`demo-submit hover:bg-gray-100 ${
+          className={`demo-submit disabled:bg hover:bg-gray-100 ${
             !isEmpty ? "bg-white " : "bg-white cursor-not-allowed"
           } `}
         >
